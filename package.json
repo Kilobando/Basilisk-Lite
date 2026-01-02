@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "node scripts/dev.js",
     "relay": "node relay/server.js",
-    "lint": "node scripts/check.js"
+    "lint": "node scripts/check.js",
+    "desktop": "electron desktop/main.js",
+    "package:win": "electron-packager . BasiliskLite --platform=win32 --arch=x64 --out=dist --overwrite",
+    "package:mac": "electron-packager . BasiliskLite --platform=darwin --arch=arm64 --out=dist --overwrite",
+    "package:linux": "electron-packager . BasiliskLite --platform=linux --arch=x64 --out=dist --overwrite"
   },
   "keywords": [
     "messenger",
@@ -16,5 +20,9 @@
     "desktop"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-packager": "^17.1.2"
+  }
 }

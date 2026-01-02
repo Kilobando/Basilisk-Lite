@@ -27,6 +27,26 @@ Privacy-first, peer-to-peer messenger with a self-hosted WebSocket relay. Messag
    - Share your public key and conversation ID out-of-band with your partner.
    - Messages stay encrypted between peers; the relay only forwards ciphertext.
 
+## Desktop app (Electron shell)
+You can run the UI as a desktop app and package platform binaries:
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Launch the desktop app (loads local `web/index.html`):
+   ```bash
+   npm run desktop
+   ```
+
+3. Build platform bundles (run on the target OS for best results):
+   ```bash
+   npm run package:win    # Windows .exe in dist/
+   npm run package:mac    # macOS .app in dist/
+   npm run package:linux  # Linux binary in dist/
+   ```
+
 ## Scripts
 - `npm run dev` — starts a lightweight static server for the UI.
 - `npm run relay` — starts the stateless WebSocket relay.
