@@ -35,3 +35,7 @@ If you just want a double-clickable app:
 - Run `npm install`
 - Run `npm run package:current`
 - Open the folder printed in the terminal (inside `dist/`) and double-click the app (`.exe` on Windows, `.app` on macOS, or the binary on Linux).
+
+## Single-file bootstrap (`basilisk.js`)
+- On any platform with Node 18+ installed, double-click `basilisk.js` (or run `node basilisk.js`).
+- It will auto-run `npm install` if `node_modules/` or Electron isn’t present, then launch the Electron window.
