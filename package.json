@@ -1,0 +1,20 @@
+{
+  "name": "basilisk-lite",
+  "version": "1.0.0",
+  "description": "Privacy-first peer-to-peer messenger with a self-hosted WebSocket relay.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "relay": "node relay/server.js",
+    "lint": "node scripts/check.js"
+  },
+  "keywords": [
+    "messenger",
+    "p2p",
+    "privacy",
+    "websocket",
+    "desktop"
+  ],
+  "author": "",
+  "license": "MIT"
+}
