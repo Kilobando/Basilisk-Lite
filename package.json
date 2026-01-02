@@ -1,23 +1,18 @@
 {
   "name": "basilisk-lite",
   "version": "1.0.0",
-  "description": "Privacy-first peer-to-peer messenger with a self-hosted WebSocket relay.",
-  "type": "module",
+  "description": "Minimal Electron starter that opens a blank window.",
+  "type": "commonjs",
   "scripts": {
-    "dev": "node scripts/dev.js",
-    "relay": "node relay/server.js",
-    "lint": "node scripts/check.js",
-    "desktop": "electron desktop/main.js",
+    "start": "electron main.js",
     "package:win": "electron-packager . BasiliskLite --platform=win32 --arch=x64 --out=dist --overwrite",
     "package:mac": "electron-packager . BasiliskLite --platform=darwin --arch=arm64 --out=dist --overwrite",
     "package:linux": "electron-packager . BasiliskLite --platform=linux --arch=x64 --out=dist --overwrite"
   },
   "keywords": [
-    "messenger",
-    "p2p",
-    "privacy",
-    "websocket",
-    "desktop"
+    "electron",
+    "desktop",
+    "starter"
   ],
   "author": "",
   "license": "MIT",
