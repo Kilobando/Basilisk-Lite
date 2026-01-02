@@ -5,6 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "electron main.js",
+    "package:current": "node scripts/package-current.js",
     "package:win": "electron-packager . BasiliskLite --platform=win32 --arch=x64 --out=dist --overwrite",
     "package:mac": "electron-packager . BasiliskLite --platform=darwin --arch=arm64 --out=dist --overwrite",
     "package:linux": "electron-packager . BasiliskLite --platform=linux --arch=x64 --out=dist --overwrite"
