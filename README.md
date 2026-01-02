@@ -39,3 +39,7 @@ If you just want a double-clickable app:
 ## Single-file bootstrap (`basilisk.js`)
 - On any platform with Node 18+ installed, double-click `basilisk.js` (or run `node basilisk.js`).
 - It will auto-run `npm install` if `node_modules/` or Electron isn’t present, then launch the Electron window.
+
+## Windows double-click helper
+- If Windows asks how to open `basilisk.js`, use `basilisk.cmd` instead (double-click it).
+- `basilisk.cmd` runs `npm install` if needed, then starts the app—no prompts about how to open the file.
